@@ -6,62 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assil Azim</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/2ef3818969.js" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Hero Section -->
-<div class="hero">
-    <nav>
-        <div class="mainlogo"> 
-            <i class="fa-solid fa-a"></i>
-        </div>
-        <h2 class = "logo">Assil Azim</h2>
+
+    <div class="hero">
+<!-- NavBar -->
+<nav class="navbar">
+    <div class="namelogo">
+        Assil Azim
+        <img src="images/logo.png">
+    </div>
+    <a href="#" class="toggle-button">
+        <button class="bar"><i class="fa-sharp fa-solid fa-bars"></i></button>
+    </a>
+    <div class="navbar-links">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#AboutPage">About</a></li>
             <li><a href="#ProjectPage">Projects</a></li>
             <li><a href="#ContactPage">Contact</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 
+
+<!-- Hero Section -->
     <div class="content">
-        <h4 class="h2firstpage">Hey, I'm Assil!</h4>
-        <h2 class="h2firstpage2">(Pronounced A-Seal...like the animal)</h2>
-        <h1 class="h1firstpage">I'm a Software Engineer.</h1>
-        <h2 class="h2firstpage2">Whomever you are, if you're up for a chat, 
-            let's grab a coffee <br> (whether it be virtual or physical!)
-        </h2>
-        <h3 class="h3firstpage">Thanks for stopping by and enjoy your stay!</h3>
-
+        <div class="header-text">
+            <h1> Hi, <br> I'm <span>A</span>ssil, </h1>
+            <p>(pronounced "a-seal"...like the animal)</p>
+            <h1>software engineer</h1>
+            <a href="#ContactPage"><button class="chatbutton"> Lets Chat!</button></a>
+        </div>
     </div>
    
 </div>
 
 <!-- About Section -->
 <section class="about">
-    <div class="main">
-        <img src="images/headshot.jpeg" class="fuck"> 
-        <div class="about_text">
-            <h2 id="AboutPage">About Me</h2>
-            <h5>Software Engineer</h5>
-            <i class="fa-solid fa-location-dot"><h3>Toronto, Ontario, Canada</h3></i>
-            <div class="speech-bubble"> 
-                <p> I am a current student enrolled in the Honours Computer
-                    Science program @ York Universiy. In search for 
-                    internships (current Software Engineer Intern @ Signify). 
-                    <br>
-                    Aside from work, I am a workout/athletics and videogame fanatic!
-                    Ever since childhood I have been obsessed with technology and 
-                    ways I could incorporate it into my other hobbies, mainly 
-                    ones related to athletics or overall daily efficency.
-                </p>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/headshot.jpeg">
+                <i class="fa-solid fa-location-dot"><h3>Toronto, Ontario, Canada</h3></i>
             </div>
-            <a href="links/Assil_Azim Resume.pdf"><button type="button">Resume</button></a>
+            <div class="about-col-2">
+                <h1 class="sub-title" id="AboutPage">Me, Myself, and I</h1>
+                <p>Honours Computer Science Student @ York University.<br> 
+                    Current software engineer @ <a href="https://www.signify.com/en-us">Signify</a> - Toronto, Canada<br><br>
+
+                    Forward-thinking Software Engineer with background working productively 
+                    in dynamic environments seeking Summer/Fall internship. <br>
+                    Ideal candidate due to excellent communication, problem-solving 
+                    and teamwork skills developed through team-led software solutions 
+                    using agile development practices to ensure 
+                    prioritization of customers' expectations and needs. <br>
+                    Have had many opportunities to work with a vast spectrum 
+                    of languages and technologies that lead me to gather 
+                    significant amounts of various experience. 
+                    <br> <br>
+                    If you're still on the fence about me... I can double as 
+                    a company personal trainer.
+                </p>
+                <div class="res-b">
+                    <a href="links/Assil_Azim Resume.pdf"><button>Resume</button></a>
+                </div> 
+            </div>
         </div>
     </div>
 </section>
@@ -89,7 +106,7 @@
                     can play vs some imaginary friends.
                 </p>
                 <p style="text-allign:center;">
-                    <a class="button" href="#">Peek</a>
+                    <a class="button" href="https://github.com/assilazim/ThreeMusketeers">Peek</a>
                 </p>
 
             </div>
@@ -123,7 +140,7 @@
                     data in the future. For now, I never forget the milk!
                 </p>
                 <p style="text-allign:center;">
-                    <a class="buttonshoppingapp" href="#">Peek</a>
+                    <a class="buttonshoppingapp" href="https://github.com/assilazim/MyShoppingApp">Peek</a>
                 </p>
 
             </div>
@@ -149,17 +166,17 @@
 <!-- footer -->
 <footer>
     <p id="ContactPage">Contact</p>
-    <p>Let's Connect. Always open to new opportunities and 
+    <h2>Let's Connect. Always open to new opportunities and 
         like-minded individuals!
-    </p>
-    <div class="socials">
+    </h2>
+    <div class="wrapper">
         <div class="blocks">
-            <a href="mailto:assil_azim@hotmail.com"><i class="fa-solid fa-envelope"><p class="links">Email</p></i></a>
-            <a href="https://www.linkedin.com/in/assilazim/"><i class="fa-brands fa-linkedin"><p class="links">LinkedIn</p></i></a>
+            <a href="mailto:assil_azim@hotmail.com"><button><i class="fa-solid fa-envelope"></i>Email</button></a>
+            <a href="https://www.linkedin.com/in/assilazim/"><button><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
         </div>
         <div class="blocks2">
-            <a href="https://github.com/assilazim"><i class="fa-brands fa-github"></i><p class="links">GitHub</p></a>
-            <a href="links/Assil_Azim Resume.pdf"><i class="fa-sharp fa-solid fa-file-lines"><p class="links">Resume</p></i></a>
+            <a href="https://github.com/assilazim"><button><i class="fa-brands fa-github"></i>Github</button></a>
+            <a href="links/Assil_Azim Resume.pdf"><button><i class="fa-sharp fa-solid fa-file-lines"></i>Resume</button></a>
         </div>
     </div>
 </footer>   
