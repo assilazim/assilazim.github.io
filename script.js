@@ -1,16 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-  gsap.utils.toArray('.fade-card').forEach((card, index) => {
-    gsap.to(card, {
+gsap.utils.toArray('.fade-card').forEach((card, index) => {
+  gsap.fromTo(card,
+    { opacity: 0, y: 50 },
+    {
       opacity: 1,
       y: 0,
       delay: index * 0.1,
       duration: 0.6,
+      clearProps: "transform", 
       scrollTrigger: {
         trigger: card,
         start: 'top 85%'
       }
-    });
-  });
+    }
+  );
 });
 
 function toggleTheme() {
@@ -26,11 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
       strings: ['Software Engineer', 'Tech Enthusiast', 'Your New Best Friend :)'],
       typeSpeed: 60,
       backSpeed: 30,
-      backDelay: 1500,
+      backDelay: 2000,
+      startDelay: 500, 
       loop: true,
       showCursor: true,
       cursorChar: '|'
-    });
+    });    
   }
 
   gsap.utils.toArray('section, header#home').forEach(section => {
